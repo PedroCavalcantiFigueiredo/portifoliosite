@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Open+Sans&display=swap');
+
+
+:root{
+    --color-neutral-0: #FFFF;
+    --color-neutral-10: #2e2e2e;
+    --color-neutral-30: #78665D;
+    --color-neutral-40: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-style: #78665D;
+    text-decoration: none;
+}
+
+body{
+    height: 100%;
+    background-color: #1f1515;
+    color:#78665D;
+    position: relative;
+    flex-grow: 1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+main{
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-right: 50px;
+    flex-grow: 1;
+}
+
+footer{
+    width: 100%;
+    color: var(--color-neutral-30);
+    margin-top: 80px;  
+}
+
+nav.menu-h{
+    width: 80px;
+    height: 100%;
+    background-color: rgb(37, 37, 37);
+    padding: 40px 0px 40px 1%;
+    box-shadow: 10px 0 0 #78665D;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+}
+
+nav.menu-h:hover{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu:hover{
+    background-color: #78665D;
+
+}
+
+ul li.item-menu{
+    transition: .5s;
+}
+
+ul li.item-menu a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display:flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+#folhabranca{
+    width: 30px;
+    margin-left: 5px;
+}
+
+h1{
+    margin-top: 40px;
+    font-size: 80px;
+}
+
+h2{
+    margin-top: 30px;
+    font-size: 50px;
+
+}
+
+h4{
+    margin-top: 20px;
+    font-size: medium;
+}
+
+.formu{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+p{
+    font-weight: bold;
+    font-size: large;
+}
+
+.quemefigueira{
+    display: flex;
+    margin-right: 50px;
+}
+
+#fotofigueira{
+    width: 700px;
+    padding: 40px;
+
+}
+
+.pedro{
+    text-align: right;
+}
+
+.davi{
+    text-align: left;
+}
+
+
+#footer_content{
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:  1rem 1rem;
+    margin-left: 60px;
+}
+
+
+#footer_social_media {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 80px;
+}
+
+#footer_social_media .footer-link{
+    font-size: 40px;
+    color: var(--color-neutral-30);
+    padding: 30px;    
+}
+
+.footer-list .footer-link{
+    color: var(--color-neutral-0);
+    transition: .4s;
+    
+}
+
+.footer-link{
+    display: inline;
+    grid-template-columns: repeat(4 2fr);
+    padding: 1rem 1rem;
+    
+}
+
+.footer-list .footer-link:hover{
+    color:#78665D;
+}
+
+ 
+#plataformas{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    
+}
+
+#footer-copyright{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #78665D;
+    color:white;
+}
+
+#folhaetxtfooter{
+    width: 70px;
+}
+
+.footer-list li{
+    display: inline;
+    padding:20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#plataformas{
+    padding: 10px;
+}
+
+.icon{
+    font-size: 30px;
+}
