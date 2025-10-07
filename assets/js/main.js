@@ -37,3 +37,36 @@ const shadowHeader = () =>{
                        : header.classList.remove('shadow-header')
 }
 window.addEventListener('scroll', shadowHeader)
+
+/*=============== LÓGICA DO MODAL DE IMAGEM DOS PROJETOS ===============*/
+const projectImages = document.querySelectorAll('.projects__img');
+const modal = document.getElementById('project-image-modal');
+const modalImg = document.getElementById('modal-img');
+const closeModalBtn = document.getElementById('modal-close-btn');
+
+// Função para abrir o modal
+const openModal = (e) => {
+    const imgSrc = e.target.src;
+    modalImg.src = imgSrc;
+    modal.classList.add('show-modal');
+};
+
+// Função para fechar o modal
+const closeModal = () => {
+    modal.classList.remove('show-modal');
+};
+
+// Adiciona o evento de clique a cada imagem de projeto
+projectImages.forEach(img => {
+    img.addEventListener('click', openModal);
+});
+
+// Adiciona o evento de clique ao botão de fechar
+closeModalBtn.addEventListener('click', closeModal);
+
+// Adiciona o evento de clique ao fundo do modal para fechar também
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        closeModal();
+    }
+});

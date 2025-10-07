@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css">
     
     <title>Portfólio | Pedro Figueiredo</title>
-    <meta property="og:title" content="Pedro Figueiredo | Desenvolvedor de Softwares">
-    <meta property="og:description" content="Portfólio de Pedro Figueiredo, Desenvolvedor de Softwares especializado em criar soluções web modernas e eficientes.">
-    <meta property="og:image" content="https://portfolio-pedrofigueiredocavalcanti.vercel.app/assets/img/pedro.png">
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <meta property="og:title" content="Pedro Figueiredo | Desenvolvedor de Software">
+    <meta property="og:description" content="Portfólio de Pedro Figueiredo, Desenvolvedor de Software especializado em criar soluções web modernas e eficientes.">
+    <meta property="og:image" content="https://portfolio-pedrofigueiredocavalcanti.vercel.app/assets/img/og-image.png">
     <meta property="og:url" content="https://portfolio-pedrofigueiredocavalcanti.vercel.app/">
     <meta property="og:type" content="website">
 
@@ -56,7 +59,7 @@
                         Olá, <span>eu sou o</span>
                     </h3>
                     <h1 class="home__title">Pedro <span>Figueiredo</span></h1>
-                    <h3 class="home__education">Desenvolvedor de Softwares</h3>
+                    <h3 class="home__education">Desenvolvedor de Software</h3>
                     <p class="home__description">
                         Formado em Análise e Desenvolvimento de Sistemas na Universidade Presbiteriana Mackenzie, busco crescer profissionalmente na área de tecnologia e implantar soluções impactantes para o cenário de desenvolvimento digital. 
                         Além dessa formação, também sou Bacharel em Direito pela FDSM e atualmente trabalho como Desenvolvedor Júnior na Procuradoria Geral da Fazenda, em Pouso Alegre - MG.
@@ -164,23 +167,21 @@
                 </article>
 
                 <article class="projects__card">
-                    <img src="assets/img/nefal.jpg" alt="Imagem do projeto AgroDelTa" class="projects__img">
+                    <img src="assets/img/nefal.jpg" alt="Imagem do projeto App NEFAL" class="projects__img">
 
                     <div class="projects__data">
                         <span class="projects__subtitle">APP</span>
                         <h3 class="projects__title">Aplicativo NEFAL</h3>
                         <p class="projects__description">
-                            Aplicativo interno para a PGFN que monitora automaticamente cerca de 400 processos de falência e recuperação judicial, integrando-se à API do TJMG para atualizar movimentações. Oferece interface para controle e visualização dos processos, otimizando a gestão jurídica do NEFAL.
+                            Aplicativo interno para a PGFN que monitora automaticamente cerca de 400 processos de falência e recuperação judicial, integrando-se à API do TJMG para atualizar movimentações.
                         </p>
                         <div class="projects__technologies">
                             <span>Python</span>
                             <span>Selenium</span>
-                            <span>Requests</span>
                             <span>AppSheet</span>
                             <span>Google Sheets API</span>
                             <span>Google Drive API</span>
-                            <span>Google Apps Script</span>
-                            <span>API MNI do TJMG</span>
+                            <span>Apps Script</span>
                         </div>
                     </div>
                 </article>
@@ -240,6 +241,13 @@
             </span>
           </div>
     </footer>
+
+    <div class="project__modal-viewer" id="project-image-modal">
+        <div class="project__modal-viewer-content">
+            <i class="ri-close-line project__modal-viewer-close" id="modal-close-btn"></i>
+            <img src="" alt="Project Image" class="project__modal-viewer-img" id="modal-img">
+        </div>
+    </div>
 
     <script src="assets/js/main.js"></script>
 </body>
