@@ -510,7 +510,6 @@ svg {
     opacity: 0;
     visibility: hidden;
     transition: opacity .3s, visibility .3s;
-    margin-top: 80px;
 }
 
 .project__modal-viewer.show-modal {
@@ -556,6 +555,11 @@ svg {
 
     .contact__info{
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project__modal-viewer {
+        padding: 2rem;
+        margin-top: 80px;
     }
 }
 
