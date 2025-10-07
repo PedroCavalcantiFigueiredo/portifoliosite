@@ -1,0 +1,19 @@
+.nav__logo
+Pedro <span>Figueiredo</span>
+
+.nav__link
+Home - About - Services - Projects - Contact
+
+======= HOME ============
+.home__subtitle
+Hello,<span>I'm</span>
+
+.home__subtitle
+Pedro Figueiredo
+
+.home--education
+Software Developer
+
+.home__description
+I am very interested in solving complicated problems that may arise in the development phase of a project and, thus, make ideas come out of paper and are really effective and useful in our world.
+
