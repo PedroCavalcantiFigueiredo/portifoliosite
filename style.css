@@ -529,11 +529,23 @@ svg {
 
 .project__modal-viewer-close {
     position: absolute;
-    top: -2.5rem;
-    right: 0;
-    font-size: 2.5rem;
+    top: 1rem;  /* Alterado de -2.5rem para 1rem */
+    right: 1rem; /* Alterado de 0 para 1rem */
+    font-size: 1.5rem; /* Ajuste no tamanho */
     color: var(--title-color);
+    background-color: hsla(0, 0%, 0%, 0.5); /* Fundo para melhor visibilidade */
+    border-radius: 50%;
+    padding: .35rem; /* Espaçamento interno */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: background-color .3s;
+}
+
+/* Adicione também um efeito hover para o botão */
+.project__modal-viewer-close:hover {
+    background-color: hsla(0, 0%, 0%, 0.7);
 }
 
 
