@@ -154,6 +154,13 @@ svg {
     font-weight: var(--font-medium);
 }
 
+.nav__item a {
+    font-size: var(--small-font-size);
+    color: #fff;
+    transition: color .4s;
+    font-weight: bold;
+}
+
 .nav__logo span {
     color: var(--first-color);
 }
@@ -242,6 +249,10 @@ svg {
     font-weight: var(--font-semi-bold);
 }
 
+.home__title span{
+    color: var(--first-color);
+}
+
 .home__education{
     font-size: var(--h2-font-size);
     margin-bottom: 1.25rem;
@@ -310,7 +321,9 @@ svg {
 
 /*=============== PROJETOS ===============*/
 .projects__container {
-    justify-content: center;
+    display: grid; /* Garante que é um grid */
+    justify-content: center; /* Centra o grid na página */
+    gap: 1.5rem;
 }
 
 .projects__card {
@@ -320,6 +333,7 @@ svg {
     transition: transform .4s, box-shadow .4s;
     display: flex;
     flex-direction: column;
+    /* A propriedade 'columns: 2fr;' foi removida daqui */
 }
 
 .projects__card:hover {
@@ -519,6 +533,6 @@ svg {
     }
 
     .projects__container{
-        grid-template-columns: repeat(3, 350px);
+        grid-template-columns: repeat(auto, 350px);
     }
 }
