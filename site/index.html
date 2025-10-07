@@ -1,94 +1,216 @@
 <!DOCTYPE html>
-    <HTML lang="pt-br">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css">
-            <title>Portifólio Pedro Cavalcanti Figueiredo</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <header class="header" id="header">
-               <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    Pedro <span>Figueiredo</span>
-                </a>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css">
+    
+    <title>Portfólio | Pedro Figueiredo</title>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">Home</a>
-                        </li>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+       <nav class="nav container">
+        <a href="#" class="nav__logo">
+            Pedro <span>Figueiredo</span>
+        </a>
 
-                        <li class="nav__item">
-                            <a href="#sobre" class="nav__link">Sobre</a>
-                        </li>
-                        
-                        <li class="nav__item">
-                            <a href="#servicos" class="nav__link">Serviços</a>
-                        </li>
-                        
-                        <li class="nav__item">
-                            <a href="#projetos" class="nav__link">Projetos</a>
-                        </li>
-                        
-                        <li class="nav__item">
-                            <a href="#contato" class="nav__link">Contato</a>
-                        </li>
-                    </ul>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#sobre" class="nav__link">Sobre</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projetos" class="nav__link">Projetos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contato" class="nav__link">Contato</a>
+                </li>
+            </ul>
 
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+       </nav>     
+    </header>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <h3 class="home__subtitle">
+                        Olá, <span>eu sou o</span>
+                    </h3>
+                    <h1 class="home__title">Pedro Figueiredo</h1>
+                    <h3 class="home__education">Desenvolvedor de Software</h3>
+                    <p class="home__description">
+                        Formado em Análise e Desenvolvimento de Sistemas na Universidade Presbiteriana Mackenzie, busco crescer profissionalmente na área de tecnologia e implantar soluções impactantes para o cenário de desenvolvimento digital. 
+                        Além dessa formação, também sou Bacharel em Direito pela FDSM e atualmente trabalho como Desenvolvedor Júnior na Procuradoria Geral da Fazenda, em Pouso Alegre - MG.
+                    </p>
+                    <a href="#contato" class="button">Vamos conversar!</a>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/pedro-cavalcanti-figueiredo-721641231/" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                    <a href="https://github.com/PedroCavalcantiFigueiredo" target="_blank" class="home__social-link">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/seu-usuario/" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
                 </div>
-               </nav>     
-            </header>
-            <main class="main">
-                <section class="home section" id="home">
-                    <div class="home__container container grid">
-                        <div class="home__content">
-                            <h3 class="home__subtitle">
-                                Olá, <span>Eu sou o</span>
-                            </h3>
+            </div>
+        </section>
 
-                            <h1 class="home__title">Pedro Figueiredo</h1>
+        <section class="about section" id="sobre">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h3 class="section__subtitle">
+                        Minha <span>Apresentação</span>
+                    </h3>
+                    <h2 class="section__title">
+                        Sobre Mim
+                    </h2>
+                    <p class="about__description">
+                        Sou um desenvolvedor apaixonado por criar soluções inovadoras. Com minha transição de carreira do Direito para a Tecnologia, trago uma perspectiva única para a resolução de problemas, combinando lógica analítica com criatividade técnica.
+                        <br><br>
+                        Atualmente, meu foco é aprimorar minhas habilidades em tecnologias como React, Node.js e Python para desenvolver aplicações web completas e eficientes.
+                    </p>
+                    <a href="#contato" class="button">Entre em Contato</a>
+                </div>
 
-                            <h3 class="home__education">Desenvolvedor de Software</h3>
+                <div class="about__image">
+                    <img src="assets/img/pedro.png" alt="Foto de Pedro Figueiredo" class="about__img">
+                </div>
+            </div>
+        </section>
 
-                            <p class="home__description">
-                                Estou estudando Análise e Desenvolvimento de Sistemas na Universidade Presbiteriana Mackenzie, no Polo Higienópolis, em SP. Já sou formado em Direito, porém busco migrar para a área de tecnologia e implantar solução impactantes e que tragam soluções para o cenário de desenvolvimento digital.
-                            </p>
+        <section class="projects section" id="projetos">
+            <h3 class="section__subtitle">Meu <span>Trabalho</span></h3>
+            <h2 class="section__title">Projetos Recentes</h2>
 
-                            <a href="#contact" class="button">Vamos conversar!</a>
+            <div class="projects__container container grid">
+                <article class="projects__card">
+                    <img src="assets/img/sitemarcus.jpg" alt="Imagem do projeto Marcus Freire - Corretor de Imóveis" class="projects__img">
+                    
+                    <div class="projects__data">
+                        <span class="projects__subtitle">Web</span>
+                        <h3 class="projects__title">Site - Marcus Freire Corretor</h3>
+                        <p class="projects__description">
+                            Site com painel administrativo (CRUD) para um corretor de imóveis, permitindo a gestão completa dos imóveis listados. Desenvolvido com TypeScript, Node.js e Supabase.
+                        </p>
+                        <div class="projects__technologies">
+                            <span>TypeScript</span>
+                            <span>CSS</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Supabase</span>
                         </div>
 
-                        <div class="home__social">
-                            <a href="" target="_blank" class="home__social-link">
-
-
+                        <div class="projects__buttons">
+                            <a href="https://github.com/PedroCavalcantiFigueiredo/marcus-freire-corretor-site" target="_blank" class="projects__button">
+                                Repositório <i class="ri-github-fill"></i>
                             </a>
-
-                            <a href="" target="_blank" class="home__social-link">
-
-                                
-                            </a>
-
-                            <a href="" target="_blank" class="home__social-link">
-
-                                
+                            <a href="https://marcusfreireimoveis.vercel.app" target="_blank" class="projects__button">
+                                Ver Online <i class="ri-external-link-line"></i>
                             </a>
                         </div>
                     </div>
+                </article>
 
-                </section>
-            </main>
-            <footer class="footer">
+                <article class="projects__card">
+                    <img src="assets/img/siteagrodelta.jpg" alt="Imagem do projeto AgroDelTa" class="projects__img">
 
-            </footer>
-            <script src="assets/js/main.js"></script>
-        </body>
-    </HTML>
+                    <div class="projects__data">
+                        <span class="projects__subtitle">Web</span>
+                        <h3 class="projects__title">Site - AgroDelTa</h3>
+                        <p class="projects__description">
+                            Site institucional para a empresa AgroDelTa, especializada na venda de hovers para análise de solos, com foco na apresentação da empresa e produtos.
+                        </p>
+                        <div class="projects__technologies">
+                            <span>HTML5</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        
+                        <div class="projects__buttons">
+                            <a href="https://github.com/PedroCavalcantiFigueiredo/agrodelta-site" target="_blank" class="projects__button">
+                                Repositório <i class="ri-github-fill"></i>
+                            </a>
+                            <a href="https://agrodelta.vercel.app" target="_blank" class="projects__button">
+                                Ver Online <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section" id="contato">
+            <h3 class="section__subtitle">
+                Entre em <span>Contato</span>
+            </h3>
+            <h2 class="section__title">
+                Estou disponível para conversar!
+            </h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title">Fale comigo</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="ri-mail-send-line contact__card-icon"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">pedraions@gmail.com
+                            </span>
+                            <a href="mailto:pedraions@gmail.com" class="contact__button">
+                                Me envie um email <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="ri-whatsapp-line contact__card-icon"></i>
+                            <h3 class="contact__card-title">WhatsApp</h3>
+                            <span class="contact__card-data">+55 (35) 99115-0671</span>
+                            <a href="https://api.whatsapp.com/send?phone=5535991150671&text=Olá,%20Pedro!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar." target="_blank" class="contact__button">
+                                Me envie uma mensagem <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="ri-linkedin-box-line contact__card-icon"></i>
+                            <h3 class="contact__card-title">LinkedIn</h3>
+                            <span class="contact__card-data">Pedro Figueiredo</span>
+                            <a href="https://www.linkedin.com/in/pedro-cavalcanti-figueiredo-721641231/" target="_blank" class="contact__button">
+                                Vamos nos conectar <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <span class="footer__copy">
+               &#169; Pedro Figueiredo. Todos os direitos reservados.
+            </span>
+          </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
